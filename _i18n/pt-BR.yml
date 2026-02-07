@@ -1,0 +1,11 @@
+nav:
+  view_on_github: Ver no GitHub
+  downloads: DOWNLOADS
+footer:
+  maintained_by: Projeto mantido por
+  hosted_on: Hospedado no GitHub Pages
+  theme_by: Tema por
+home:
+  heading: Bem-vindo ao meu site
+  intro: Aqui eu compartilho meus projetos, estudos e experimentos.
+  language_label: Idioma

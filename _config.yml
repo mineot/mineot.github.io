@@ -1,5 +1,23 @@
 title: Mineot
-description: Meu sites pessoal de projetos
+description: Meu site pessoal de projetos
+url: ""
+baseurl: ""
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin
+languages: ["pt-BR", "en-US"]
+default_lang: "pt-BR"
+default_locale_in_subfolder: false
+exclude_from_localizations: ["assets", "images", "css", "js"]
+parallel_localization: true
+exclude:
+  - .vscode/
+  - run.sh
+  - vscode-local.md
+sass:
+  style: compressed
+  quiet_deps: true
+  silence_deprecations:
+    - import

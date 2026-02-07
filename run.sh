@@ -6,4 +6,5 @@ if [ ! -f "Gemfile" ]; then
   exit 1
 fi
 
+bundle exec jekyll clean
 bundle exec jekyll serve --livereload --port 4000

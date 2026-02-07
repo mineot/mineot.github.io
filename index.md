@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
+{% if site.lang == "en-US" %}
+{% capture localized_readme %}{% include_relative en-us.md %}{% endcapture %}
+{% else %}
+{% capture localized_readme %}{% include_relative pt-br.md %}{% endcapture %}
+{% endif %}
 
-## {% t home.heading %}
-
-{% t home.intro %}
+{{ localized_readme | markdownify }}

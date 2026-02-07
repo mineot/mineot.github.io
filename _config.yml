@@ -20,6 +20,9 @@ exclude:
   - .vscode/
   - run.sh
   - vscode-local.md
+  - README.md
+  - pt-br.md
+  - en-us.md
 sass:
   style: compressed
   quiet_deps: true

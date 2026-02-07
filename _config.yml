@@ -1,5 +1,9 @@
 title: Mineot
 description: Meu site pessoal de projetos
+github_username: mineot
+github_repository: mineot.github.io
+github_url: https://github.com/mineot
+repository_url: https://github.com/mineot/mineot.github.io
 url: ""
 baseurl: ""
 remote_theme: pages-themes/midnight@v0.2.0

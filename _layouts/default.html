@@ -20,7 +20,7 @@
       <div id="header">
         <nav>
           <ul>
-            <li class="fork"><a href="{{ site.github.repository_url }}">{% t nav.view_on_github %}</a></li>
+            <li class="fork"><a href="{{ site.github.repository_url | default: site.repository_url }}">{% t nav.view_on_github %}</a></li>
             {% if site.show_downloads %}
               <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
               <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
@@ -34,7 +34,7 @@
 
       <section>
         <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1>{{ site.title | default: site.github.repository_name | default: site.github_repository }}</h1>
           <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
           <p>
             {% t home.language_label %}:
@@ -42,7 +42,7 @@
             <a href="/en-US/">EN-US</a>
           </p>
           <hr>
-          <span class="credits left">{% t footer.maintained_by %} <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+          <span class="credits left">{% t footer.maintained_by %} <a href="{{ site.github.owner_url | default: site.github_url }}">{{ site.github.owner_name | default: site.github_username }}</a></span>
           <span class="credits right">{% t footer.hosted_on %} &mdash; {% t footer.theme_by %} <a href="https://twitter.com/mattgraham">mattgraham</a></span>
         </div>
 

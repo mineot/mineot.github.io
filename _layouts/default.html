@@ -34,8 +34,8 @@
 
       <section>
         <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name | default: site.github_repository }}</h1>
-          <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+          <h1>{% t site.title %}</h1>
+          <p>{% t site.description %}</p>
           <p>
             {% t home.language_label %}:
             <a href="/">PT-BR</a> |
